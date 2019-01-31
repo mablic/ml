@@ -5,7 +5,7 @@ This is machine learning relative functions.
 This is a class object to create gradient descent method from signal to multiple factors.
 
 a.Function:
-  read_data: This function read the data from csv file to pandas dataframe.    
+read_data: This function read the data from csv file to pandas dataframe.    
 
 b.Class:
 
