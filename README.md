@@ -1,4 +1,4 @@
-# Project Title
+# Machine learning aglorithm
 
 Machine learning gradient descent aglorithm.
 
