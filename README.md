@@ -6,7 +6,7 @@ Machine learning gradient descent aglorithm.
 
 df = read_data()
 
-theta = np.array([0, 0])
+theta = np.array([0, 0]) eol=lf
 test = GradientDescent(df)
 test.setX('x')
 test.setY('y')
