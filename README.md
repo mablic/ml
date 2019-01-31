@@ -1,7 +1,8 @@
 # ml
+
 This is machine learning relative functions.
 
-1. gradientDescent 
+1.gradientDescent 
 This is a class object to create gradient descent method from signal to multiple factors.
 
 a.Function:
