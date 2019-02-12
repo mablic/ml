@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import math
 import model.base as base
+import matplotlib.pyplot as plt
 
 PATH1 = 'D:\\python\\ML\\model\\data\\data1.txt'
 PATH2 = 'D:\\python\\ML\\model\\data\\log-data1.txt'
@@ -33,7 +34,7 @@ class GradientDescent(base.Data, base.Graph):
         ttl = len(self.df)
 
         # return xData
-        cost = 1 / (2 * ttl) * sum((np.array(self.df_x).dot(theta) - self.df_y) ** 2)
+        cost = 1 / (2 * ttl) * sum((np.array(self.df_x).dot(np.array(theta)) - self.df_y) ** 2)
         return cost
 
     def computeGradientDescent(self, theta, alpha, nums):
@@ -51,6 +52,15 @@ class GradientDescent(base.Data, base.Graph):
     def graph(self):
         super().graph(self.theta, self.df, self.df_x, self.df_y)
 
+    def graphRegression(self, xCol, theta):
+
+        plt.plot(self.df_x[xCol], self.df_y, "o")
+        plt.plot(self.df_x[xCol], self.df_x.dot(theta))
+        plt.xlabel('x-axis')
+        plt.ylabel('y-axis')
+        plt.title('Regression prediction')
+        plt.legend(loc='upper right')
+        plt.show()
 
 class LogisticRegression(base.Data, base.Graph):
 
@@ -98,19 +108,21 @@ class LogisticRegression(base.Data, base.Graph):
 
 
 if __name__ == '__main__':
-    # testObj = GradientDescent('x', 'y', path=PATH1)
-    # testObj.setX('x')
-    # testObj.setY('y')
-    # theta = [0, 0]
-    # testObj.computeGradientDescent(theta, 0.01, 500)
-    # testObj.graph()
-    testObj = LogisticRegression('x1', 'x2', 'y', path=PATH2)
-    testObj.setX('x1', 'x2')
+    testObj = GradientDescent('x', 'y', path=PATH1)
+    testObj.setX('x')
     testObj.setY('y')
-    theta = [0, 0, 0]
-    testObj.computeGradientDescent(theta, 0.005, 100000)
-
-    print(testObj.theta)
+    theta = [0, 0]
+    testObj.computeGradientDescent(theta, 0.01, 500)
+    testObj.graphRegression('x', testObj.theta)
+    # print(testObj.theta)
+    # print(testObj.computeCost(testObj.theta))
+    # testObj = LogisticRegression('x1', 'x2', 'y', path=PATH2)
+    # testObj.setX('x1', 'x2')
+    # testObj.setY('y')
+    # theta = [0, 0, 0]
+    # testObj.computeGradientDescent(theta, 0.005, 100000)
+    #
+    # print(testObj.theta)
     # print(testObj.ans[-1])
     # print(testObj.ans)
     # print(testObj.computeCost(theta))
