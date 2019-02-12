@@ -4,21 +4,7 @@ Machine learning gradient descent aglorithm.
 
 ## Getting Started
 
-df = read_data()
-
-theta = np.array([0, 0])
-
-test = GradientDescent(df)
-
-test.setX('x')
-
-test.setY('y')
-
-ret = test.computeCost(theta)
-
-ret, ans = test.computeGradientDescent(theta, 0.01, 500)
-
-test.graph(ret)
+Open for editing
 
 ## Sample Output
 
