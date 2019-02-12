@@ -2,6 +2,8 @@
 
 Machine learning gradient descent aglorithm.
 
+2 class are adding into this model:
+
 ## Getting Started
 
 Open for editing
