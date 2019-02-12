@@ -9,6 +9,7 @@ Open for editing
 ## Sample Output
 
 ![capture](https://user-images.githubusercontent.com/19805677/52031774-c0109880-24e3-11e9-83aa-3c2189016038.JPG)
+![capture](https://user-images.githubusercontent.com/19805677/52612604-18cf2200-2e50-11e9-894a-b0e8f6b70d98.JPG)
 
 ### Prerequisites
 
