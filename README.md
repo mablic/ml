@@ -1,16 +1,45 @@
-# ml
-This is machine learning relative functions.
+# Machine learning aglorithm
 
-1. model:
+Machine learning gradient descent aglorithm.
 
-gradientDescent:
+## Getting Started
 
-This is the module to do signal factor(for now) generate gradient descent method. Function include:
+df = read_data()
 
-a. Cost function.
-b. Gradient Descent.
-c. Graph the predict result vs the actual plot.
+theta = np.array([0, 0])
 
-Sample output below:
+test = GradientDescent(df)
 
-![capture](https://user-images.githubusercontent.com/19805677/51817717-7e88af00-2291-11e9-88cc-b24c17efb866.JPG)
+test.setX('x')
+
+test.setY('y')
+
+ret = test.computeCost(theta)
+
+ret, ans = test.computeGradientDescent(theta, 0.01, 500)
+
+test.graph(ret)
+
+## Sample Output
+
+![capture](https://user-images.githubusercontent.com/19805677/52031774-c0109880-24e3-11e9-83aa-3c2189016038.JPG)
+
+### Prerequisites
+
+Pandas, Numpy, Matplotlib
+
+## Versioning
+
+v1.0
+
+## Authors
+
+Mai He - (https://github.com/mablic)
+
+## License
+
+N/A
+
+## Acknowledgments
+
+N/A
