@@ -2,11 +2,17 @@
 
 Machine learning gradient descent aglorithm.
 
-2 class are adding into this model:
+2 class included into this model:
+  a. base class: This is the base class to setup the data structure and the graph.
+  b. regression class: This is the class to inheritance the base class and can do linear regression and logistic regression.
 
 ## Getting Started
 
-Open for editing
+testObj = GradientDescent(your x, your y, your file path)
+testObj.setX(your x needs to include to the model)
+testObj.setY(your y needs to include to the model)
+testObj.computeGradientDescent(your theta, start alpha, nums of running)
+testObj.graphRegression(your x, your output theta)
 
 ## Sample Output
 
