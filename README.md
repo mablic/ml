@@ -12,7 +12,7 @@ testObj = GradientDescent(your x, your y, your file path)\
 testObj.setX(your x needs to include to the model)\
 testObj.setY(your y needs to include to the model)\
 testObj.computeGradientDescent(your theta, start alpha, nums of running)\
-testObj.graphRegression(your x, your output theta)\
+testObj.graphRegression(your x, your output theta)
 
 ## Sample Output
 
