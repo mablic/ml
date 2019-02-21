@@ -1,4 +1,4 @@
-# statistics_related_model
+# statistics_related_models
 
 Machine learning gradient descent aglorithm.
 
