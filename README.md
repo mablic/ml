@@ -47,5 +47,5 @@ N/A
 
 ## Acknowledgments
 
-Data from
+Data from\
 https://www.coursera.org/learn/machine-learning/home/welcome
