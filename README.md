@@ -27,7 +27,7 @@ testObj.plotResidual()
 
 ![capture](https://user-images.githubusercontent.com/19805677/52031774-c0109880-24e3-11e9-83aa-3c2189016038.JPG)
 ![capture](https://user-images.githubusercontent.com/19805677/52612604-18cf2200-2e50-11e9-894a-b0e8f6b70d98.JPG)
-![capture](https://user-images.githubusercontent.com/19805677/53146419-bec60f00-3569-11e9-9727-5789796e19f2.JPG)
+![capture](https://user-images.githubusercontent.com/19805677/53146474-e9b06300-3569-11e9-95c5-cd04b3264f79.JPG)
 
 ### Prerequisites
 
