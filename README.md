@@ -3,8 +3,15 @@
 Machine learning gradient descent aglorithm.
 
 2 class included into this model:
-  a. base class: This is the base class to setup the data structure and the graph.
-  b. regression class: This is the class to inheritance the base class and can do linear regression and logistic regression.
+  a. base.py:\
+     i. base class: This is the base class for set up your x input and y input. The setup X function can take more than 1 x variable.\
+     ii.graph class: This is the graphing class for graph the prediction output. It does not graph the residual.\
+     iii.residual class: This is the class using least squares error method to calculate the residual. It can also graph out the residual.\
+     \
+  b. regression class:\
+     i.Linear regression class: This class takes the setup X and Y to do the regressional analysis.\
+     ii.Logistic regression class: This is the class takes the setup X and Y to do the logistic regression analysis.\
+  
 
 ## Getting Started
 
@@ -12,7 +19,9 @@ testObj = GradientDescent(your x, your y, your file path)\
 testObj.setX(your x needs to include to the model)\
 testObj.setY(your y needs to include to the model)\
 testObj.computeGradientDescent(your theta, start alpha, nums of running)\
-testObj.graphRegression(your x, your output theta)
+testObj.graphRegression(your x, your output theta)\
+testObj.calcResidual()
+testObj.plotResidual()
 
 ## Sample Output
 
