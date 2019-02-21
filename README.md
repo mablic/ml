@@ -4,7 +4,7 @@ Machine learning gradient descent aglorithm.
 
 2 class included into this model:
   a. base.py:\
-     i. base class: This is the base class for set up your x input and y input. The setup X function can take more than 1 x variable.\
+     i. base class: This is the base class for set up your x input and y input. The setup X function can take more than one variable.\
      ii.graph class: This is the graphing class for graph the prediction output. It does not graph the residual.\
      iii.residual class: This is the class using least squares error method to calculate the residual. It can also graph out the residual.\
      \
@@ -27,6 +27,7 @@ testObj.plotResidual()
 
 ![capture](https://user-images.githubusercontent.com/19805677/52031774-c0109880-24e3-11e9-83aa-3c2189016038.JPG)
 ![capture](https://user-images.githubusercontent.com/19805677/52612604-18cf2200-2e50-11e9-894a-b0e8f6b70d98.JPG)
+![capture](https://user-images.githubusercontent.com/19805677/53146419-bec60f00-3569-11e9-9727-5789796e19f2.JPG)
 
 ### Prerequisites
 
