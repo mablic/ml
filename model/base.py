@@ -74,6 +74,29 @@ class Graph:
         plt.show()
 
 
+# residual analysis
+class Residual:
+    def __init__(self):
+        self.df = pd.DataFrame()
+
+    def calcResidual(self, theta, df_x, df_y):
+        # exit function for missing theta
+        if len(theta) == 0 or len(df_x) == 0 or len(df_y) == 0:
+            return
+        self.df['residual'] = np.array(df_x).dot(theta) - df_y
+        # least Square error analysis
+        error = self.df['residual'].map(lambda x: x**2).sum()
+        return error
+
+    def plotResidual(self):
+        plt.plot(self.df['residual'], 'o')
+        plt.xlabel('x-axis')
+        plt.ylabel('y-axis')
+        plt.title('Residual Analysis')
+        plt.legend(loc='upper right')
+        plt.show()
+
+
 if __name__ == '__main__':
 
     TEST = Data()

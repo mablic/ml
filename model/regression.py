@@ -11,7 +11,7 @@ PATH2 = 'D:\\python\\ML\\model\\data\\log-data1.txt'
 # this module contains regression class
 # gradientdescent, logistic class
 # this is the gradientdescent for linear regression
-class GradientDescent(base.Data, base.Graph):
+class GradientDescent(base.Data, base.Graph, base.Residual):
 
     def __init__(self, *args, path):
         self.theta = 0
@@ -49,6 +49,9 @@ class GradientDescent(base.Data, base.Graph):
             self.ans.append(self.computeCost(theta))
         self.theta = theta
 
+    def calcResidual(self):
+        return super().calcResidual(self.theta, self.df_x, self.df_y)
+
     def graph(self):
         super().graph(self.theta, self.df, self.df_x, self.df_y)
 
@@ -61,6 +64,7 @@ class GradientDescent(base.Data, base.Graph):
         plt.title('Regression prediction')
         plt.legend(loc='upper right')
         plt.show()
+
 
 class LogisticRegression(base.Data, base.Graph):
 
@@ -113,7 +117,9 @@ if __name__ == '__main__':
     testObj.setY('y')
     theta = [0, 0]
     testObj.computeGradientDescent(theta, 0.01, 500)
-    testObj.graphRegression('x', testObj.theta)
+    print(testObj.calcResidual())
+    testObj.plotResidual()
+    # testObj.graphRegression('x', testObj.theta)
     # print(testObj.theta)
     # print(testObj.computeCost(testObj.theta))
     # testObj = LogisticRegression('x1', 'x2', 'y', path=PATH2)
